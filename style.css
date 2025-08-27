@@ -7,31 +7,32 @@
 }
 
 :root {
-    --verde: green;
+    --verde: rgb(82, 126, 11);
     --amarillo: yellow;
-    --naranja: orange;
+    --naranja: orange  ;
     --marron: brown;
     --negro: black;
+    --color-menu: rgb(0, 0, 0);  
+    --formularios: yellow;  
 }
 
 .cajageneral {
-    margin: 1cm auto;
-    width: 1000px;
+    width: 1258px;
     border: 2px solid;
-    padding: 5px;
     background-color: var(--negro);
     box-shadow: 0px 3px 30px 10px black;
     display: flex;
     flex-wrap: wrap;             
     justify-content: center;
-    gap: 2rem;
+    gap: 7rem;
 }
 h1 {
     text-align: center;
     font-size:40px;
     font-weight: bolder;
     color: var(--naranja);
-    text-shadow: 0px 2px 5px var(--naranja)
+    text-shadow: 0px 2px 5px var(--naranja);
+    margin-bottom: 1rem;
 }
 
 p {
@@ -40,12 +41,14 @@ p {
    
 }
 
+
+
 .tarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid;
-    max-width: 800px;
+    width: 66rem;
     padding: 5px;
     padding-top: 10px;
     background: linear-gradient(to bottom, transparent, var(--amarillo) 70%);
@@ -54,7 +57,6 @@ p {
 
 .tarjeta__img {
     width: 50%;
-    margin: 0 auto;
     border-radius: 50%;
     box-shadow: 0 2px 20px #000;
     transition: transform 0.7s ease;
@@ -67,7 +69,7 @@ p {
 
 .tarjeta__parrafo {
     text-align: center;
-    color: var(--marron);
+    color: var(--negro);
     font-size: 20px;
     padding-top: 50px;
     font-weight: 900;
@@ -76,16 +78,21 @@ p {
 .card__nav {
     background-color: var(--verde);
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     width: 100%;
-    margin-bottom: 1rem;
 }
 
 .card__nav a{
     padding: 10px 15px;
-    color: var(--naranja);
-    font-weight: 600;
+    color: var(--color-menu);
+    font-weight: bold;
     border-radius: 10px;
+}
+.card__nav a:hover{
+    background-color: rgb(197, 193, 193);
+    color: var(--negro);
+    transition: 0.5s;
+
 }
 
 
@@ -93,10 +100,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 26%;
-    max-width: 300px;
-    max-height: 260px;
-    background-color: var(--amarillo);
+    width: 22%;
+    height: 350px;
+    background-color: var(--formularios);
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -104,11 +110,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
-    max-height: 400px;
-    background-color: var(--amarillo);
+    width: 22%;
+    height: 350px;
+    background-color: var(--formularios);
     border-radius: 10px;
-    box-sizing: border-box;
 }
 
 
@@ -119,7 +124,7 @@ p {
 }
 
 .cajaform__input {
-     width: 100%;
+    width: 100%;
     padding: 7px 10px;
     font-size: 15px;
     margin-bottom: 4px;
@@ -143,21 +148,31 @@ p {
     font-size: 1rem;
 }
 
-.cajaform__fieldset {
+.cajaform__fieldset_login {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 25px 6px;
-    border: 2px solid var(--verde);
-    box-sizing: border-box;
+    padding: 68px 10px;
+    border: 2px solid var(--negro);
+    border-radius: 9px;
+
+
+}
+.cajaform__fieldset_registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid var(--negro);
     border-radius: 9px;
 
 
 }
 
 .cajaform__legend {
-    color: var(--verde);
+    color: var(--negro);
     text-align: center;
     font-size: 20px;
 }
@@ -166,9 +181,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 60rem;
+    width: 70rem;
     padding: 1rem 1rem;
-    background: linear-gradient(transparent 5%, yellow 60%);
+    background: linear-gradient(transparent 5%, yellow);
     border-radius: 10px;
 }
 .catalogo__productos {
@@ -185,8 +200,13 @@ p {
     background-color: var(--negro);
     width: 90%;
     border-radius: 40px;
-    margin: 0.5rem 0;
+    margin: 1rem ;
     padding: 1rem;
+}
+.catalogo__cajaproducto:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
 }
 .catalogo__title {
     color: var(--amarillo);
@@ -206,11 +226,10 @@ p {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    display: block;
-    margin:  5px auto 10px auto;
     box-shadow: 0 2px 10px 3px var(--naranja);
 }
 
 .catalogo__precio {
     color: var(--naranja);
+    margin: 20px;
 }
