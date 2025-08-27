@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+:root {
+    --verde: green;
+    --amarillo: yellow;
+    --naranja: orange;
+    --marron: brown;
+    --negro: black;
+}
+
+.cajageneral{
+    margin: 1cm auto;
+    max-width: 1000px;
+    border: 2px solid;
+    padding: 5px;
+    background-color: var(--negro);
+    box-shadow: 0px 3px 30px 10px black;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size:60px;
+    font-weight: bolder;
+    color: var(--naranja);
+    text-shadow: 0px 2px 5px var(--naranja)
+}
+
+p {
+    color: var(--naranja);
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.tarjeta {
+    margin: 20px 0;
+    border: 2px solid;
+    max-width: 40%;
+    padding: 5px;
+    padding-top: 10px;
+    background: linear-gradient(to bottom, transparent, var(--amarillo) 70%);
+    display: inline-block;
+}
+
+.tarjeta__img {
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 0.9cm;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 20px #000;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta__img:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 0px 20px var(--amarillo);
+}
+
+.tarjeta__parrafo {
+    text-align: justify;
+    color: var(--marron);
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: 900;
+}
+
+.card__nav {
+    background-color: var(--verde);
+    position: relative;
+    padding: 3px 0;
+}
+
+.card__nav a{
+    padding: 10px 15px;
+    color: var(--naranja);
+    font-weight: 600;
+}
+
+.card__nav__login{
+    position: absolute;
+    right: 4.2cm;
+    top: -0.2cm;
+}
+.card__nav__register {
+    position: absolute;
+    right: 0.8cm;
+    top: -0.2cm;
+}
+
+.cajaform {
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: var(--amarillo);
+    position: absolute;
+    top: 3.7cm;
+    padding: 5px;
+}
+
+.cajaform__label {
+    color: var(--marron);
+    font-weight: 600;
+    margin: 1px;
+    margin-right: 0;
+    display: block;
+}
+
+.cajaform__input {
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+    margin-bottom: 4px;
+    display: block;
+    border: 1px solid var(--marron);
+}
+
+.cajaform__button {
+    width: 2cm;
+    margin: auto 2cm auto 2cm;
+    padding: 5px 5px 5px 10px;
+    border-radius: 30px;
+    color: var(--marron);
+    border: 2px solid var(--marron);
+    background-color: transparent;
+    text-shadow: 0px 2px 15px var(--marron);
+    cursor: pointer;
+}
+
+.cajaform__fieldset {
+    padding: 5px;
+    border: 2px solid var(--verde);
+    font-weight: 800;
+}
+
+.cajaform__legend {
+    color: var(--verde);
+    text-align: left;
+    font-size: 20px;
+}
+
+.cajaform--dos {
+    display: block;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    top: 8.4cm;
+    left: 10.6cm;
+}
+
+.catalogo {
+    width: 33.5%;
+    height: auto;
+    background: linear-gradient(transparent 5%, yellow 60%);
+    float: right;
+    position: relative;
+    top: 0.4cm;
+    text-align: center;
+    padding-bottom: 1cm;
+}
+
+.catalogo__cajaproducto {
+    background-color: var(--negro);    height: auto;
+    display: inline-block;
+    width: 4cm;
+    border-radius: 40px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.catalogo__title {
+    color: var(--amarillo);
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 1cm;
+}
+
+.catalogo__nombrefrutas {
+    color: var(--naranja);
+    font-size: 20px;
+    text-align: center;
+}
+
+.catalogo__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    margin:  5px auto 10px auto;
+    box-shadow: 0 2px 10px 3px var(--naranja);
+}
+
+.catalogo__precio {
+    color: var(--naranja);
+}

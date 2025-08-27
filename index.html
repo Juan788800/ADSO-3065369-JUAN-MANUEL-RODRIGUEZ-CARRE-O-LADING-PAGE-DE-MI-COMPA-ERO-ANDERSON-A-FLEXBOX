@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BEM</title>
+</head>
+<body>
+    <section class="cajageneral">
+        <h1>Fruteria</h1>
+        <p>Frutas Frescas directas del campo!</p>
+        <nav class="card__nav">
+            <a href="#" target="_blank">Inicio</a>
+            <a href="#" target="_blank">Servicios</a>
+            <a href="#" target="_blank">Blog</a>
+            <a href="#" target="_blank">¿Donde Estamos?</a>
+            <a href="#" target="_blank">Contactanos</a>
+            <a href="#" class="card__nav__login">Inicia Sesión</a>
+            <a href="#" class="card__nav__register">Registrate!</a>
+        </nav>
+        
+        <div class="tarjeta">
+            <img src="imglanding/frutas2.jpg" alt="frutas" class="tarjeta__img">
+            <p class="tarjeta__parrafo">Lorem ipsum door sit amet consectetur adipisicing eit. Temporibus quidem repellendus dicta tempora, hic harum neque atque rerum ab doloribus eveniet doloremque, ipsam assumenda commodi dolores. Exercitationem quia obcaecati cupiditate!</p>
+        </div>
+        
+        <section class="cajaform">
+            <form action="#" method="post">
+            <fieldset class="cajaform__fieldset">
+            <legend class="cajaform__legend">Login</legend>
+                <label for="name" class="cajaform__label">Usuario: </label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu usuario" class="cajaform__input" required >
+                <label for="email" class="cajaform__label">Contraseña: </label>
+                <input type="password" id="email" name="email" placeholder="Eje. 12345" class="cajaform__input" required>
+            </form>
+            <button class="cajaform__button" type="reset">Ingresar</button>
+            </fieldset>
+        </section>
+        <section class="cajaform cajaform--dos">
+            <form action="#" method="post">
+                <fieldset class="cajaform__fieldset">
+                    <legend class="cajaform__legend">Register</legend>
+                <label for="name2" class="cajaform__label">Nombre: </label>
+                <input type="text" id="name2" name="name" placeholder="Eje. Anderson Murcia" class="cajaform__input" required >
+                <label for="email2" class="cajaform__label">Email: </label>
+                <input type="email" id="email2" name="email" placeholder="Eje. name@gmail.com" class="cajaform__input" required>
+                <label for="password2" class="cajaform__label">Contraseña: </label>
+                <input type="password" id="password2" name="number" class="cajaform__input" placeholder="Crea una contraseña">
+                <label for="password3" class="cajaform__label">Confirma tu contraseña: </label>
+                <input type="password" id="password3" name="password3" class="cajaform__input" placeholder="Confirma tu contraseña">
+                <button class="cajaform__button" type="reset">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="catalogo">
+            <div class="catalogo__productos">
+                <h2 class="catalogo__title">Algo De Nuestro Catalogo</h2>
+                <div class="catalogo__cajaproducto">
+                    <h3 class="catalogo__nombrefrutas">kiwi</h3>
+                    <img class="catalogo__img" src="imglanding/kiwi.jpg" alt="kiki">
+                    <p class="catalogo__precio">$ 5.000</p>
+                </div>
+                <div class="catalogo__cajaproducto">
+                    <h3 class="catalogo__nombrefrutas">Uvas</h3>
+                    <img class="catalogo__img" src="imglanding/uvas.jpg" alt="kiki">
+                    <p class="catalogo__precio">$ 4.000</p>
+                </div>
+                <div class="catalogo__cajaproducto">
+                    <h3 class="catalogo__nombrefrutas">Piña</h3>
+                    <img class="catalogo__img" src="imglanding/piña.jpg" alt="kiki">
+                    <p class="catalogo__precio">$ 3.000</p>
+                </div>
+                <div class="catalogo__cajaproducto">
+                    <h3 class="catalogo__nombrefrutas">Naranja</h3>
+                    <img class="catalogo__img" src="imglanding/naranja.jpg" alt="kiki">
+                    <p class="catalogo__precio">$ 2.000</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
