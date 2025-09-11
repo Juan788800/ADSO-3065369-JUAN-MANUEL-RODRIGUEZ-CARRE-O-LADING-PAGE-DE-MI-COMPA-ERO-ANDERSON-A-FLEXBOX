@@ -3,60 +3,62 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border-radius: 10px;
 }
 
 :root {
-    --verde: green;
+    --verde: rgb(82, 126, 11);
     --amarillo: yellow;
-    --naranja: orange;
+    --naranja: orange  ;
     --marron: brown;
     --negro: black;
+    --color-menu: rgb(0, 0, 0);  
+    --formularios: yellow;  
 }
 
-.cajageneral{
-    margin: 1cm auto;
-    max-width: 1000px;
-    border: 2px solid;
-    padding: 5px;
+.cajageneral {
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
     background-color: var(--negro);
-    box-shadow: 0px 3px 30px 10px black;
-    position: relative;
-    overflow: hidden;
+    box-shadow: black;
 }
-
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bolder;
     color: var(--naranja);
-    text-shadow: 0px 2px 5px var(--naranja)
+    text-shadow: 0px 2px 5px var(--naranja);
+    margin-bottom: 1rem;
 }
+
 
 p {
     color: var(--naranja);
-    text-align: center;
-    margin: 0px 0px 5px 0px;
+    font-size: 20px;
+   
 }
 
+
+
 .tarjeta {
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid;
-    max-width: 40%;
+    width: 90%;
     padding: 5px;
     padding-top: 10px;
     background: linear-gradient(to bottom, transparent, var(--amarillo) 70%);
-    display: inline-block;
+
 }
 
 .tarjeta__img {
-    margin: 0 auto;
-    width: 80%;
-    margin-left: 0.9cm;
-    height: auto;
+    width: 40%;
     border-radius: 50%;
     box-shadow: 0 2px 20px #000;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
 }
 
 .tarjeta__img:hover {
@@ -65,122 +67,156 @@ p {
 }
 
 .tarjeta__parrafo {
-    text-align: justify;
-    color: var(--marron);
+    text-align: center;
+    color: var(--negro);
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 50px;
     font-weight: 900;
 }
 
 .card__nav {
     background-color: var(--verde);
-    position: relative;
-    padding: 3px 0;
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+
 }
 
 .card__nav a{
     padding: 10px 15px;
-    color: var(--naranja);
-    font-weight: 600;
+    color: var(--color-menu);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.card__nav a:hover{
+    background-color: rgb(197, 193, 193);
+    color: var(--negro);
+    transition: 0.5s;
+
 }
 
-.card__nav__login{
-    position: absolute;
-    right: 4.2cm;
-    top: -0.2cm;
+
+.cajaform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    height: 360px;
+    background-color: var(--formularios);
+    border-radius: 10px;
+    box-sizing: border-box;
 }
-.card__nav__register {
-    position: absolute;
-    right: 0.8cm;
-    top: -0.2cm;
+.cajaform_cajaform--registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    height: 360px;
+    background-color: var(--formularios);
+    border-radius: 10px;
 }
 
-.cajaform {
-    width: auto;
-    height: auto;
-    margin: 0 5px;
-    display: inline-block;
-    background-color: var(--amarillo);
-    position: absolute;
-    top: 3.7cm;
-    padding: 5px;
-}
 
 .cajaform__label {
     color: var(--marron);
     font-weight: 600;
-    margin: 1px;
-    margin-right: 0;
-    display: block;
+    margin-bottom: 3px;
 }
 
 .cajaform__input {
     width: 100%;
-    padding: 5px;
-    font-size: 10px;
+    padding: 7px 10px;
+    font-size: 15px;
     margin-bottom: 4px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid var(--marron);
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .cajaform__button {
-    width: 2cm;
-    margin: auto 2cm auto 2cm;
-    padding: 5px 5px 5px 10px;
-    border-radius: 30px;
+    width: 90%;
+    margin: 16px auto 6px auto;
+    padding: 9px 0;
+    border-radius: 20px;
     color: var(--marron);
     border: 2px solid var(--marron);
     background-color: transparent;
     text-shadow: 0px 2px 15px var(--marron);
     cursor: pointer;
+    display: block;
+    font-size: 1rem;
 }
 
-.cajaform__fieldset {
-    padding: 5px;
-    border: 2px solid var(--verde);
-    font-weight: 800;
+.cajaform__fieldset_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 68px 10px;
+    border: 2px solid var(--negro);
+    border-radius: 9px;
+
+
+}
+.cajaform__fieldset_registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid var(--negro);
+    border-radius: 9px;
+
+
 }
 
 .cajaform__legend {
-    color: var(--verde);
-    text-align: left;
-    font-size: 20px;
-}
-
-.cajaform--dos {
-    display: block;
-    align-content: center;
-    align-items: center;
-    height: auto;
-    top: 8.4cm;
-    left: 10.6cm;
+    color: var(--negro);
+    text-align: center;
+    font-size: 30px;
 }
 
 .catalogo {
-    width: 33.5%;
-    height: auto;
-    background: linear-gradient(transparent 5%, yellow 60%);
-    float: right;
-    position: relative;
-    top: 0.4cm;
-    text-align: center;
-    padding-bottom: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    background: linear-gradient(transparent 5%, yellow);
+    border-radius: 10px;
 }
-
+.catalogo__productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 1rem;
+    width: 100%;
+}
 .catalogo__cajaproducto {
-    background-color: var(--negro);    height: auto;
-    display: inline-block;
-    width: 4cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--negro);
+    width: 50%;
     border-radius: 40px;
-    margin: 5px 5px 5px 5px;
-    padding: 5px;
+    margin: 1rem ;
+    padding: 1rem;
 }
+.catalogo__cajaproducto:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 
+}
 .catalogo__title {
     color: var(--amarillo);
     text-align: center;
     font-weight: bolder;
-    padding-bottom: 1cm;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .catalogo__nombrefrutas {
@@ -193,11 +229,114 @@ p {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    display: block;
-    margin:  5px auto 10px auto;
     box-shadow: 0 2px 10px 3px var(--naranja);
 }
 
 .catalogo__precio {
     color: var(--naranja);
+    margin: 20px;
+}
+
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle-label span {
+  display: flex;
+  width: 24px;
+  height: 4px;
+  margin: 3px 0;
+  border-radius: 2px;
+  background:var(--naranja);  
+}
+
+
+@media (max-width: 390px) {
+
+    .cajageneral {
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .tarjeta__img {
+        width: 70%;
+    }
+
+    .tarjeta__parrafo {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .menu-toggle-label {
+        display: flex;
+    }
+    .card__nav {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .card__nav {
+        display: flex;
+    }
+
+    .cajaform, 
+    .cajaform_cajaform--registro {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .cajaform__fieldset_login,
+    .cajaform__fieldset_registro {
+        padding: 20px 10px;
+    }
+
+    .catalogo {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .catalogo__productos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .catalogo__cajaproducto {
+        width: 100%;
+    }
+
+    .catalogo__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .catalogo__title {
+        font-size: 1.5rem;
+    }
 }
